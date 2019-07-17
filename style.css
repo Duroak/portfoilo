@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)),
+        url('galaxystars.jpg');
+    color: white;
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color: grey;
+    height: 6vh;
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.hamburger {
+    display: none;
+    font-size: 25px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 30%; 
+    list-style-type: none
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#homeView {
+    display: none;
+}
+
+#homeView .bigWelcome, #welcomeMsg  {
+    text-align: center;
+}
+
+.bigWelcome {
+    margin-top: 25vh;
+    Font-size: 120px;
+    letter-spacing: 15px;
+    font-family: 'Pacifico', cursive;
+}
+
+#welcomeMsg {
+    Font-size: 24px;
+    margin-top: 15vh;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#bioView {
+    display:;
+}
+
+.bigTitle {
+    font-size: 80px; 
+    text-align: center;
+    letter-spacing: 7px;
+    margin-top: 10vh;
+    font-family: 'Pacifico', cursive;
+}
+
+#myPicture {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 350px;
+    background-color: grey;
+    margin-top: 4vh;
+}
+
+#biographyBox {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 5vh;
+    font-family: 'Orbitron', sans-serif;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#miniTitle {
+    text-align: center;
+    font-size: 24px;
+}
+
+#projectView {
+    display: none;
+}
+
+#quizapp {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    background-color: grey;
+    margin-top: 5vh;
+} 
+
+#quizappText {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5vh;
+}
+
+.footer {
+    display: none;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    height: 6vh;
+    margin-top: 20%;
+}
+
+@media screen and (max-width: 1200px) {
+    .menu {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+   /* .menu {
+        width: 50%;
+    } */
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+    
+    .menu {
+        position: absolute;
+        right: 0;
+        height: 54vh;
+        width: 35%;
+        top: 6vh;
+        background-color: grey;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+    }
+
+    .menu li{
+        opacity: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .title {
+        font-size: 16px;
+    }
+
+    .hamburger {
+        font-size: 20px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+}
