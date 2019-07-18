@@ -18,8 +18,11 @@ body {
     justify-content: space-around;
     align-items: center;
     font-family: 'Orbitron', sans-serif;
-    background-color: grey;
+    background-color: rgba(44, 44, 44, 0.685);
     height: 6vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .title {
@@ -49,6 +52,18 @@ body {
     letter-spacing: 2px;
 }
 
+.menu a:hover {
+    color:rgb(49, 124, 153);
+}
+  
+/*.menu a:focus {
+    color: lawngreen;
+}*/
+  
+.menu a:active {
+    color: rgb(36, 216, 240);
+}
+
 #homeView {
     display: none;
 }
@@ -71,7 +86,7 @@ body {
 }
 
 #bioView {
-    display:;
+    display: none; 
 }
 
 .bigTitle {
@@ -89,6 +104,7 @@ body {
     height: 350px;
     background-color: grey;
     margin-top: 4vh;
+    border-radius: 25%;
 }
 
 #biographyBox {
@@ -99,6 +115,7 @@ body {
     width: 600px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 75px;
 }
 
 #miniTitle {
@@ -107,22 +124,42 @@ body {
 }
 
 #projectView {
-    display: none;
+   /* display: none; */
+}
+
+#projectView a {
+    text-decoration: none;
+    color: white;
 }
 
 #quizapp {
     display: block;
     margin: 0 auto;
-    width: 800px;
+    width: 900px;
     height: 500px;
     background-color: grey;
     margin-top: 5vh;
+    border-radius: 25px;
 } 
 
-#quizappText {
+#quizappBox {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 5vh;
+    font-family: 'Orbitron', sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    width: 600px;
+    line-height: 200%;
+}
+
+#quizappBox a:hover {
+    color:rgb(49, 124, 153);
+}
+
+#quizappBox a:active {
+    color: rgb(36, 216, 240);
 }
 
 .footer {
@@ -130,7 +167,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: grey;
+    background-color: rgba(44, 44, 44, 0.685);
     color: white;
     text-align: center;
     height: 6vh;
