@@ -13,9 +13,9 @@
             <div class="title">Duro Akintunde</div>
             <div class="hamburger">&#9776;</div>
             <ul class="menu">
-                <li><span id="js-home">Home</span></li>
-                <li><span id="js-bio">Bio</span></li>
-                <li><span id="js-projects">Projects</span></li>
+                <li><a href="#" class="homeLink">Home</a></li>
+                <li><a href="#" class="bioLink">Bio</a></li>
+                <li><a href="#" class="projectsLink">Projects</a></li>
                 <li><a href="https://www.linkedin.com/in/duro-akintunde-7aa52282/">Linkedin</a></li>
                 <li><a href="https://github.com/Duroak">GitHub</a></li>
             </ul>
@@ -25,10 +25,10 @@
     <main role="main">
         <section id="homeView">
             <p class="bigWelcome">Welcome</p>
-            <p id="welcomeMsg"></p>
+            <p id="welcomeMsg">Hey everyone, my name Duro Akintunde and welcome to the site.</p>
         </section>
 
-        <section id="bioView">
+        <section id="bioView" class="hide">
             <p class="bigTitle" id="biography">About Me</p>
             <img src="" alt="picture of self" id="myPicture">
             <div id="biographyBox">
@@ -37,7 +37,7 @@
             </div>
         </section>
 
-        <section id="projectView">
+        <section id="projectView" class="hide">
             <p class="bigTitle" id="projects">Projects</p>
             <img src="SoccerQuiz.png" alt="picture of project" id="quizapp">
             <div id="quizappBox">
@@ -48,7 +48,7 @@
         </section>
     </main>
       
-    <footer role="content-info" class="footer">Footer</footer>
+    <footer role="content-info" class="footer hide">Email me at @duroak@yahoo.com</footer>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -9,28 +9,28 @@ const navSlide = () => {
 } 
 
 function switchHome () {
-    $('#js-home').click(function(event){
-        $('#bioView').hide;
-        $('#projectView').hide;
-        $('#homeView').show;
-        $('.footer').hide;
+    $('.homeLink').click(function(){
+        $('#homeView').removeClass('hide');
+        $('#bioView').addClass('hide');
+        $('#projectView').addClass('hide');
+        $('.footer').addClass('hide');
     });
 }
 
 function switchBio () {
-    $('.navbar').on('click', '#js-bio', function(event){
-        $('#bioView').show;
-        $('#projectView').hide;
-        $('#homeView').hide;
-        $('.footer').show;
+    $('.bioLink').click(function(){
+        $('#bioView').removeClass('hide');
+        $('#projectView').addClass('hide');
+        $('#homeView').addClass('hide');
+        $('.footer').removeClass('hide');
     });
 }
 function switchProjects () {
-    $('#js-projects').click(function(event){
-        $('#bioView').hide;
-        $('#projectView').show;
-        $('#homeView').hide;
-        $('.footer').show;
+    $('.projectsLink').click(function(){
+        $('#projectView').removeClass('hide')
+        $('#bioView').addClass('hide');
+        $('#homeView').addClass('hide');
+        $('.footer').removeClass('hide');
     });
 }
 

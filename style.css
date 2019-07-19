@@ -26,6 +26,10 @@ body {
     width: 100%;
 }
 
+.hide {
+    display: none;
+}
+
 .title {
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -55,14 +59,6 @@ body {
     letter-spacing: 2px;
 }
 
-.menu li:hover {
-    color:rgb(49, 124, 153);
-}
-  
-.menu li:active {
-    color: rgb(36, 216, 240);
-}
-
 .menu a:hover {
     color: rgb(49, 124, 153);
 }
@@ -71,9 +67,6 @@ body {
     color: rgb(36, 216, 240);
 }
 
-/* #homeView {
-    
-} */
 
 #homeView .bigWelcome, #welcomeMsg  {
     text-align: center;
@@ -90,10 +83,6 @@ body {
     Font-size: 24px;
     margin-top: 15vh;
     font-family: 'Orbitron', sans-serif;
-}
-
-#bioView {
-     display: none; 
 }
 
 .bigTitle {
@@ -129,10 +118,6 @@ body {
 #miniTitle {
     text-align: center;
     font-size: 24px;
-}
-
-#projectView {
-    display: none;
 }
 
 #projectView a {
@@ -181,7 +166,6 @@ main::after {
 }
 
 .footer {
-    display: none;
     left: 0;
     bottom: 0;
     width: 100%;
