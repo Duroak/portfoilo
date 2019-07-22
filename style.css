@@ -166,7 +166,6 @@ main::after {
 }
 
 .footer {
-    left: 0;
     bottom: 0;
     width: 100%;
     background-color: rgba(44, 44, 44, 0.685);
@@ -174,6 +173,15 @@ main::after {
     text-align: center;
     height: 6vh;
     margin-top: 20%;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    margin-top: 5vh;
+    font-family: 'Orbitron', sans-serif;
 }
 
 footer, main::after {
@@ -207,6 +215,10 @@ footer, main::after {
 }
 
 @media screen and (max-width: 375px) {
+    .navbar {
+        height: 10vh;
+    }
+    
     .title {
         font-size: 16px;
     }
@@ -217,6 +229,21 @@ footer, main::after {
 
     .menu {
         width: 100%;
+        top: 10vh;
+    }
+
+    .bigWelcome {
+        font-size: 60px;
+        letter-spacing: 10px;
+    }
+    
+    #welcomeMsg {
+        font-size: 18px;
+    }
+
+    .bigTitle {
+        font-size: 40px;
+        margin: 0 auto;
     }
 }
 
